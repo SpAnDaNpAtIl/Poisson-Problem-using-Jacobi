@@ -84,8 +84,6 @@ while(booler == True):
     unew = np.zeros((N-1)**2)
     x.append(a)
     for i in range(len(unew)):
-        temp_list = []
-        
         unew[i] += (B[i] - productor(A[i], ucombiner[-1]) + ucombiner[-1][i]*A[i][i])/A[i][i]
     y.append(math.log10(ratioer(unew, ucombiner[-1]))) 
     if(ratioer(unew, ucombiner[-1])< 10**(-8)):
